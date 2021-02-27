@@ -1,2 +1,2 @@
-# sistema
+# System
 This is a sales system
