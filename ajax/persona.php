@@ -64,11 +64,12 @@ switch ($_GET["op"]){
  				"5"=>$reg->email
              ];
  		}
- 		$results = array(
+ 		$results = [
  			"sEcho"=>1, //Información para el datatables
  			"iTotalRecords"=>count($data), //enviamos el total registros al datatable
  			"iTotalDisplayRecords"=>count($data), //enviamos el total registros a visualizar
- 			"aaData"=>$data);
+ 			"aaData"=>$data
+		 ];
  		echo json_encode($results);
 
 	break;
@@ -89,11 +90,12 @@ switch ($_GET["op"]){
  				"5"=>$reg->email
              ];
  		}
- 		$results = array(
+ 		$results = [
  			"sEcho"=>1, //Información para el datatables
  			"iTotalRecords"=>count($data), //enviamos el total registros al datatable
  			"iTotalDisplayRecords"=>count($data), //enviamos el total registros a visualizar
- 			"aaData"=>$data);
+ 			"aaData"=>$data
+		 ];
  		echo json_encode($results);
 
 	break;
